@@ -13,3 +13,16 @@ We have uploaded the UML diagram and screenshots of the schema for your easy und
 - Papry Rahman  
 - Md. Tauseef Ur Rahman  
 - Anirban Roy Sourav
+
+ Project images :
+ <image src = "Screenshots/2_registration.jpg">
+ <image src = "Screenshots/login.jpg">
+ <image src = "Screenshots/studentdashboard.jpg">
+ <image src = "Screenshots/cgpacalc.jpg">
+ <image src = "Screenshots/resources.jpg">
+ <image src = "Screenshots/rankofcgpa.png">
+ <image src = "Screenshots/routine.jpg">
+ <image src = "Screenshots/message.png">
+ <image src = "Screenshots/chatbot.jpg">
+ <image src = "Screenshots/studentsviewofassignment.jpg">
+ <image src = "Screenshots/course_selection_teacher.png">
