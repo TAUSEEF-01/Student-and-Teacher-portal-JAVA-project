@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="vbox" prefHeight="594.0" prefWidth="863.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hellofx.demo">
+   <Button fx:id="home" mnemonicParsing="false" onAction="#homeOnAction" prefHeight="24.0" prefWidth="88.0" text="Home" />
+   <AnchorPane prefHeight="211.0" prefWidth="900.0">
+      <children>
+         <TextField fx:id="todo1" layoutX="17.0" layoutY="35.0" prefHeight="24.0" prefWidth="108.0" promptText="Todo1" />
+         <TextField fx:id="sc1" layoutX="675.0" layoutY="31.0" prefHeight="24.0" prefWidth="108.0" promptText="Schedule 1" />
+         <Button fx:id="sadd1" layoutX="783.0" layoutY="31.0" mnemonicParsing="false" onAction="#son1" text="Add" />
+         <Label fx:id="task1" layoutX="228.0" layoutY="32.0" prefHeight="24.0" prefWidth="191.0" text="Task 1" />
+         <Label fx:id="time1" layoutX="419.0" layoutY="27.0" prefHeight="33.0" prefWidth="191.0" text="Time" />
+         <Text layoutX="6.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TO-DO" wrappingWidth="88.0">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </Text>
+         <Label fx:id="task2" layoutX="228.0" layoutY="61.0" prefHeight="24.0" prefWidth="191.0" text="Task 2" />
+         <Label fx:id="task3" layoutX="228.0" layoutY="92.0" prefHeight="24.0" prefWidth="191.0" text="Task 3" />
+         <TextField fx:id="todo2" layoutX="17.0" layoutY="64.0" prefHeight="24.0" prefWidth="108.0" promptText="Todo 2" />
+         <Button fx:id="tadd2" layoutX="128.0" layoutY="65.0" mnemonicParsing="false" onAction="#taddon2" text="Add" />
+         <TextField fx:id="todo3" layoutX="17.0" layoutY="95.0" prefHeight="24.0" prefWidth="108.0" promptText="Todo 3" />
+         <Button fx:id="tadd3" layoutX="128.0" layoutY="95.0" mnemonicParsing="false" onAction="#taddon3" text="Add" />
+         <TextField fx:id="sc2" layoutX="675.0" layoutY="61.0" prefHeight="24.0" prefWidth="108.0" promptText="Schedule 2" />
+         <TextField fx:id="sc3" layoutX="675.0" layoutY="91.0" prefHeight="24.0" prefWidth="108.0" promptText="Schedule 2" />
+         <Button fx:id="sadd2" layoutX="783.0" layoutY="61.0" mnemonicParsing="false" onAction="#son2" text="Add" />
+         <Button fx:id="sadd3" layoutX="783.0" layoutY="91.0" mnemonicParsing="false" onAction="#son3" text="Add" />
+         <Label fx:id="time2" layoutX="419.0" layoutY="57.0" prefHeight="33.0" prefWidth="191.0" text="Time" />
+         <Label fx:id="time3" layoutX="419.0" layoutY="86.0" prefHeight="33.0" prefWidth="191.0" text="Time" />
+         <Button fx:id="tadd1" layoutX="128.0" layoutY="35.0" mnemonicParsing="false" onAction="#taddon1" text="Add" />
+      </children>
+   </AnchorPane>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</VBox>

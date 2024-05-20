@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="580.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.TeacherDashBoardController">
+    <children>
+        <VBox layoutX="20" layoutY="20" prefHeight="580.0" prefWidth="850.0" spacing="10">
+            <!-- Header Section -->
+            <HBox prefHeight="45.0" prefWidth="855.0" spacing="10.0">
+                <Label fx:id="teacherNameLabel" prefHeight="30.0" prefWidth="556.0" style="-fx-font-size: 20px; -fx-text-fill: white;" text="Welcome to Teacher Panel" />
+            <ImageView fitHeight="30.0" fitWidth="565.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../src/main/resources/com/example/demo/Images/Logout_Button.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="500.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            </HBox>
+
+            <!-- Main Dashboard Section -->
+            <TabPane prefHeight="519.0" prefWidth="850.0">
+                <!-- Course Management Tab -->
+                <Tab closable="false" text="Course Management">
+                    <AnchorPane prefWidth="855.0">
+                  <VBox fx:id="availableCoursesVbox" fillWidth="false" layoutX="352.0" layoutY="8.0" prefHeight="266.0" prefWidth="391.0" spacing="10">
+                     <children>
+                        <Label prefHeight="0.0" prefWidth="170.0" text="Available Courses">
+                           <font>
+                              <Font name="Cascadia Code" size="17.0" />
+                           </font>
+                        </Label>
+                        <ListView fx:id="availableCourseListView" prefHeight="200.0" prefWidth="361.0" />
+                        <HBox prefHeight="26.0" prefWidth="293.0" spacing="10.0">
+                           <children>
+                              <Button onAction="#handleAddAvailableCourse" prefHeight="26.0" prefWidth="227.0" text="Add Selected Course" />
+                              <Button fx:id="closeAvailableCourse" alignment="CENTER" mnemonicParsing="false" onAction="#closeAvailableCourse" prefHeight="4.0" prefWidth="64.0" snapToPixel="false" text="Close">
+                                 <font>
+                                    <Font name="Cascadia Code" size="13.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                        <VBox layoutX="10" layoutY="10" spacing="10">
+                            <Label style="-fx-font-size: 16px;" text="Courses">
+                        <font>
+                           <Font name="System Bold" size="12.0" />
+                        </font></Label>
+                            <ListView fx:id="courseListView" prefHeight="200" />
+                            <HBox spacing="10">
+                                <Button fx:id="addCourseButton" onAction="#handleAddCourse" prefHeight="24.0" prefWidth="115.0" text="Add Course" />
+                                <Button onAction="#handleDeleteCourse" text="Remove Course" />
+                            </HBox>
+                        </VBox>
+                    </AnchorPane>
+                </Tab>
+
+                <!-- Assignment Management Tab -->
+                <Tab closable="false" text="Assignment Management">
+                    <AnchorPane>
+                        <VBox layoutX="10" layoutY="10" prefHeight="264.0" prefWidth="280.0" spacing="10">
+                            <Label style="-fx-font-size: 16px;" text="Courses" />
+                            <ListView fx:id="assignmentListView" prefHeight="200" prefWidth="283.0" />
+                            <HBox spacing="10">
+                                <Button fx:id="addAssignmentButton" onAction="#handleAddAssignment" text="Add Assignment" />
+                                <Button onAction="#handleViewSubmissions" text="View Submissions" />
+                            </HBox>
+                        </VBox>
+                  <VBox fx:id="setAssignmentMarkVBox" layoutX="307.0" layoutY="10.0" prefHeight="264.0" prefWidth="190.0" spacing="10.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="181.0" text="Set Assignment Mark">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="assignmentMarkTextField" prefHeight="24.0" prefWidth="119.0" promptText="Total Marks" />
+                     </children>
+                  </VBox>
+                  <Label fx:id="assignmentNotification" alignment="CENTER" layoutY="311.0" prefHeight="60.0" prefWidth="850.0" text="Notification">
+                     <font>
+                        <Font size="49.0" />
+                     </font>
+                  </Label>
+                    </AnchorPane>
+                </Tab>
+
+                <!-- Exam Management Tab -->
+                <Tab closable="false" text="Exam Management">
+                    <AnchorPane>
+                        <VBox fx:id="examListVBox" layoutX="10" layoutY="10" spacing="10">
+                            <Label style="-fx-font-size: 16px;" text="Courses" />
+                            <ListView fx:id="examListView" prefHeight="200" prefWidth="265.0" />
+                            <HBox spacing="10">
+                                <Button onAction="#handleScheduleExam" text="Schedule Exam" />
+                                <Button onAction="#handleViewExams" text="View Exams" />
+                            </HBox>
+                        </VBox>
+                  <VBox fx:id="setExamMarkVBox" layoutX="286.0" layoutY="10.0" prefHeight="264.0" prefWidth="190.0" spacing="10.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="181.0" text="Set Exam Mark">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="assignmentMarkTextField1" prefHeight="24.0" prefWidth="119.0" promptText="Total Marks" />
+                     </children>
+                  </VBox>
+                    </AnchorPane>
+                </Tab>
+            </TabPane>
+        </VBox>
+    </children>
+</AnchorPane>

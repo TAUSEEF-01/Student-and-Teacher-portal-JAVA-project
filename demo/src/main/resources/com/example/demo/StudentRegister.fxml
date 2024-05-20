@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="580.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.StudentRegisterController">
+    <children>
+        <ImageView fitHeight="600.0" fitWidth="921.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/myimages/35055134_8266722.jpg" />
+            </image>
+        </ImageView>
+        <TextField fx:id="firstnameTextField" layoutX="253.0" layoutY="21.0" prefHeight="41.0" prefWidth="415.0" promptText="   First name" styleClass="signUpScreenLeftInput" stylesheets="@CSS/SignupScreen.css" />
+      <TextField fx:id="lastnameTextField" layoutX="253.0" layoutY="71.0" prefHeight="41.0" prefWidth="415.0" promptText="   Last name" styleClass="signUpScreenLeftInput" stylesheets="@CSS/SignupScreen.css" />
+      <TextField fx:id="emailTextField" layoutX="253.0" layoutY="122.0" prefHeight="41.0" prefWidth="415.0" promptText="   Email" styleClass="signUpScreenLeftInput" stylesheets="@CSS/SignupScreen.css" />
+      <TextField fx:id="regstrationTextField" layoutX="253.0" layoutY="171.0" prefHeight="41.0" prefWidth="238.0" promptText="   Regstration no." styleClass="signUpScreenLeftInput" stylesheets="@CSS/SignupScreen.css" />
+      <TextField fx:id="rollTextField" layoutX="502.0" layoutY="171.0" prefHeight="41.0" prefWidth="165.0" promptText="   Roll no." styleClass="signUpScreenLeftInput" stylesheets="@CSS/SignupScreen.css" />
+      <TextField fx:id="UsernameTextField" layoutX="253.0" layoutY="225.0" prefHeight="41.0" prefWidth="415.0" promptText="   Username" styleClass="signUpScreenLeftInput" stylesheets="@CSS/SignupScreen.css" />
+        <PasswordField fx:id="setPasswordField" layoutX="252.0" layoutY="278.0" prefHeight="41.0" prefWidth="415.0" promptText="   Password" styleClass="signUpScreenLeftInput" stylesheets="@CSS/SignupScreen.css" />
+      <PasswordField fx:id="confirmPasswordField" layoutX="252.0" layoutY="328.0" prefHeight="41.0" prefWidth="415.0" promptText="   Confirm password" styleClass="signUpScreenLeftInput" stylesheets="@CSS/SignupScreen.css" />
+        <Button fx:id="registerButton" layoutX="243.0" layoutY="418.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="41.0" prefWidth="415.0" styleClass="signUpScreenLeftButton" stylesheets="@CSS/SignupScreen.css" text="Register">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Button>
+        <Button fx:id="cancelButton" layoutX="308.0" layoutY="519.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="38.0" prefWidth="284.0" styleClass="signUpScreenLeftButton" stylesheets="@CSS/SignupScreen.css" text="Exit">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Button>
+      <Button fx:id="signupScreenSignupButton" layoutX="411.0" layoutY="469.0" mnemonicParsing="false" onAction="#loginUpButtonOnAction" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: trasparent;" styleClass="signUpScreenLeftButton" text="Login" textFill="#730c66" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="243.0" layoutY="475.0" text="Already Have an Account ?">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="registrationMessageLabel" alignment="CENTER" layoutX="253.0" layoutY="376.0" prefHeight="30.0" prefWidth="415.0" textFill="#730c66">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

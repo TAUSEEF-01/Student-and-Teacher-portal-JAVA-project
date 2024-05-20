@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="588.0" prefWidth="815.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hellofx.Cgpa">
+   <children>
+      <TextField fx:id="oopMarks" layoutX="79.0" layoutY="50.0" promptText="marks" />
+      <TextField layoutX="293.0" layoutY="50.0" promptText="credit" />
+      <Label layoutX="23.0" layoutY="50.0" prefHeight="24.0" prefWidth="49.0" text="OOP" />
+      <Label fx:id="oopg" layoutX="497.0" layoutY="50.0" prefHeight="24.0" prefWidth="49.0" text="Grade" />
+      <TextField fx:id="dsamarks" layoutX="78.0" layoutY="92.0" promptText="marks" />
+      <TextField layoutX="292.0" layoutY="92.0" promptText="credit" />
+      <Label layoutX="22.0" layoutY="92.0" prefHeight="24.0" prefWidth="49.0" text="DSA" />
+      <Label fx:id="dsag" layoutX="496.0" layoutY="92.0" prefHeight="24.0" prefWidth="49.0" text="Grade" />
+      <TextField fx:id="eeemarks" layoutX="78.0" layoutY="122.0" promptText="marks" />
+      <TextField layoutX="292.0" layoutY="122.0" promptText="credit" />
+      <Label layoutX="22.0" layoutY="122.0" prefHeight="24.0" prefWidth="49.0" text="EEE" />
+      <Label fx:id="eeeg" layoutX="496.0" layoutY="122.0" prefHeight="24.0" prefWidth="49.0" text="Grade" />
+      <TextField fx:id="mathmarks" layoutX="78.0" layoutY="158.0" promptText="marks" />
+      <TextField layoutX="292.0" layoutY="158.0" promptText="credit" />
+      <Label layoutX="22.0" layoutY="158.0" prefHeight="24.0" prefWidth="49.0" text="Math" />
+      <Label fx:id="mathg" layoutX="496.0" layoutY="158.0" prefHeight="24.0" prefWidth="49.0" text="Grade" />
+      <TextField fx:id="gedmarks" layoutX="79.0" layoutY="210.0" promptText="marks" />
+      <TextField layoutX="293.0" layoutY="210.0" promptText="credit" />
+      <Label layoutX="23.0" layoutY="210.0" prefHeight="24.0" prefWidth="49.0" text="GED" />
+      <Label fx:id="gedg" layoutX="497.0" layoutY="210.0" prefHeight="24.0" prefWidth="49.0" text="Grade" />
+      <TextField fx:id="ooplabmarks" layoutX="78.0" layoutY="242.0" promptText="marks" />
+      <TextField layoutX="292.0" layoutY="242.0" promptText="credit" />
+      <Label layoutX="8.0" layoutY="242.0" prefHeight="24.0" prefWidth="63.0" text="OOP Lab" />
+      <Label fx:id="ooplabg" layoutX="496.0" layoutY="242.0" prefHeight="24.0" prefWidth="49.0" text="Grade" />
+      <TextField fx:id="dsalabmarks" layoutX="84.0" layoutY="282.0" promptText="marks" />
+      <TextField layoutX="298.0" layoutY="282.0" promptText="credit" />
+      <Label layoutX="14.0" layoutY="282.0" prefHeight="24.0" prefWidth="63.0" text="DSA Lab" />
+      <Label fx:id="dsalabg" layoutX="502.0" layoutY="282.0" prefHeight="24.0" prefWidth="49.0" text="Grade" />
+      <TextField fx:id="eeelabmarks" layoutX="86.0" layoutY="315.0" promptText="marks" />
+      <TextField layoutX="300.0" layoutY="315.0" promptText="credit" />
+      <Label layoutX="16.0" layoutY="315.0" prefHeight="24.0" prefWidth="63.0" text="EEE Lab" />
+      <Label fx:id="eeelabg" layoutX="504.0" layoutY="315.0" prefHeight="24.0" prefWidth="49.0" text="Grade" />
+      <Label layoutX="47.0" layoutY="382.0" prefHeight="24.0" prefWidth="98.0" text="CGPA:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="cgpa" layoutX="145.0" layoutY="382.0" prefHeight="24.0" prefWidth="98.0" text="0.00">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="666.0" layoutY="315.0" mnemonicParsing="false" onAction="#calccgpa" text="Enter" />
+      <Button fx:id="home" layoutX="10.0" layoutY="12.0" mnemonicParsing="false" onAction="#homeOnAction" text="Home" />
+   </children>
+</AnchorPane>
